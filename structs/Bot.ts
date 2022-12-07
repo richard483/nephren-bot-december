@@ -17,6 +17,17 @@ export class Bot {
   public queues = new Collection<Snowflake, MusicQueue>();
 
   public constructor(public readonly client: Client) {
+    const http = require("http");
+
+    const hostname = "127.0.0.1";
+    const port = 3000;
+
+    const server = http.createServer(() => {});
+
+    server.listen(port, hostname, () => {
+      console.log(`Server running at http://${hostname}:${port}/`);
+    });
+
     this.client.login(config.TOKEN);
 
     this.client.on("ready", () => {
