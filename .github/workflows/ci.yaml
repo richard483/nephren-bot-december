@@ -17,5 +17,5 @@ name: ci
       - run: npm run build
       - run: npm run start
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: 951I9Ajl9arhs8pnJ6Byq8Ovc-lpJ-z2ZZNg-B9q
+          CF_ACCOUNT_ID: 26f20451923581330999630486311463
