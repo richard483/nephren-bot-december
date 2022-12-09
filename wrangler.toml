@@ -1,0 +1,10 @@
+name = "lucky-wood-c0de"
+main = "./index.ts"
+compatibility_date="2022-02-26"
+
+[build]
+command = "npm install && npm run build && npm run start"
+
+account_id = "26f20451923581330999630486311463"
+workers_dev = true
+
